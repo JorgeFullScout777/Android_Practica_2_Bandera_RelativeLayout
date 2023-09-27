@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#7CFC00"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jorge Luis Luna Reyna Relative Layout"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practica 3"
+            android:textSize="40sp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/view1"
+        android:layout_above="@id/view3"
+        >
+
+        <View
+            android:id="@+id/mt1"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="120dp"
+            />
+
+        <View
+            android:id="@+id/mt2"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="120dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#Ff0000"
+        android:layout_alignParentBottom="true"
+        >
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
